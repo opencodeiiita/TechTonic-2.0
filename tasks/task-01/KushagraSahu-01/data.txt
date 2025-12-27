@@ -1,0 +1,6 @@
+OpenCode FOSS Wing – Merge Conflict Task
+
+Line 1: Learning real-world Git workflows.
+Line 2: This line is modified in Branch A and Branch B.
+Line 3: Git conflicts are normal in open source.
+Line 4: I am learning how to resolve them properly.
