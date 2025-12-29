@@ -1,0 +1,35 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.navbar{
+    height: 40px;
+    background-color: #0f1111;
+    color: white;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.navbar section{
+    padding: 5px;
+    color:white;
+}
+.border{
+    border: 1.5px solid transparent;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.navbar a {
+  color: white;         
+  text-decoration: none; 
+  font-weight: 500;
+}
+
