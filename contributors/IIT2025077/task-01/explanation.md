@@ -1,0 +1,2 @@
+## Explain What This Code Does
+ This code makes a landing page for TechTonic which contains a nav bar with different sections like about, Why TechTonic and Features.User Can navigate to these by just clicking on the sections in navbar.
