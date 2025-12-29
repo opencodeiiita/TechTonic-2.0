@@ -6,14 +6,27 @@ using namespace std;
   Purpose : Calculates final payable amount after tax and discount.
 */
 
-double calculateFinalAmount(double amount, int customerType) {
-    //Part A
+double calculateFinalAmount(double amount, int customerType)
+{
+    // Part A
 
+    // Part B
+    //  Discount based on customer type
 
-    //Part B
+    if (customerType == 1)
+    {                         // Regular Customer
+        total = total * 0.95; // 5% discount
+    }
+    else if (customerType == 2)
+    {                         // Premium Customer
+        total = total * 0.85; // 15% discount
+    }
+
+    return total;
 }
 
-int main() {
+int main()
+{
     double amount;
     int type;
 
