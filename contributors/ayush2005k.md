@@ -10,7 +10,7 @@ Ayush Kumar Singh - 23BAI10922
 my football coach.
 
 ## Favorite Senior
-[no one]
+no one
 
 ## Interests
 football, ML
