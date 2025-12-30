@@ -7,7 +7,7 @@
 [@ayush2005k](https://github.com/ayush2005k)
 
 ## Who is Your Tech Parent?
-[my football coach.]
+my football coach.
 
 ## Favorite Senior
 [no one]
