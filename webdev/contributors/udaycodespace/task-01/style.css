@@ -1,0 +1,95 @@
+/* =========================
+   Design Tokens
+   ========================= */
+
+:root {
+  --bg-main: #0d0f14;
+  --bg-surface: #151823;
+  --text-primary: #e5e7eb;
+  --text-secondary: #9ca3af;
+  --accent: #7dd3fc;
+}
+
+/* =========================
+   Base Reset
+   ========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: Georgia, serif;
+  line-height: 1.6;
+}
+
+/* =========================
+   Section Styling
+   ========================= */
+
+.context-section {
+  max-width: 880px;
+  margin: 96px auto;
+  padding: 48px;
+  background-color: var(--bg-surface);
+  border-radius: 14px;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.context-header {
+  margin-bottom: 28px;
+}
+
+.context-tag {
+  display: inline-block;
+  margin-bottom: 8px;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.context-header h2 {
+  margin: 0;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+
+.context-content p {
+  max-width: 70ch;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+/* =========================
+   Motion
+   ========================= */
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   Responsive
+   ========================= */
+
+@media (max-width: 600px) {
+  .context-section {
+    margin: 48px 16px;
+    padding: 28px;
+  }
+
+  .context-header h2 {
+    font-size: 1.6rem;
+  }
+}

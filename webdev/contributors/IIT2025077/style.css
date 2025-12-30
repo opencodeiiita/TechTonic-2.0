@@ -1,0 +1,84 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+Header{
+    background-color: blue;
+    color:white;
+    text-align: center;
+}
+.About{
+    background-color: rgb(55, 168, 255);
+}
+.Features{
+    background-color: aliceblue;
+}
+.Why{
+    background-color: white;
+}
+Section{
+    padding-top:45px; 
+    padding-bottom: 30px;
+}
+.About {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.About h2 {
+  color: #0f172a;
+}
+
+.about p {
+  font-size: 16px;
+}
+.features {
+  background-color: #f1f5f9;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.features > div {
+  max-width: 1000px;
+  margin: auto;
+}
+.features h3 {
+  margin-top: 25px;
+  color: #0f172a;
+}
+.why {
+  background-color: #ffffff;
+}
+
+.why h2 {
+  text-align: center;
+}
+
+.why h3 {
+  margin-top: 25px;
+  color: #1e40af;
+}
+article {
+    border: 2px solid #4A90E2; 
+    border-radius: 8px;          
+    padding: 15px 20px;          
+    margin-bottom: 15px;         
+    background-color: #f9faff; 
+}
+.Features div{
+    border: 2px solid #4A90E2; 
+    border-radius: 8px;          
+    padding: 15px 20px;          
+    margin-bottom: 15px;         
+    background-color: #f9faff; 
+}
