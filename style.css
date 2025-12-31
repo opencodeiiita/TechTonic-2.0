@@ -1,0 +1,91 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #89f7fe, #66a6ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 400px;
+    background: linear-gradient(to bottom right, #ffecd2, #fcb69f);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.05);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #4b1f6f;
+    font-weight: 700;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #4b1f6f;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+   padding: 12px 15px;
+ border: none;
+  border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+     outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+input:focus, textarea:focus { box-shadow: 0 5px 15px rgba(75, 31, 111, 0.3);
+}
+
+textarea {
+    resize: none;
+ height: 100px;
+}
+
+.error { color: #d32f2f;
+    font-size: 13px;
+margin-top: 5px;
+    position: absolute;
+bottom: -18px;
+    left: 0;
+}
+
+.success {
+    color: #388e3c;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+button { width: 100%;
+ padding: 12px;
+     background: linear-gradient(to right, #ff512f, #dd2476);
+border: none;
+    border-radius: 12px;
+ color: white;
+     font-weight: 600;
+    cursor: pointer;
+    font-size: 16px;
+transition: 0.3s;
+}
+
+button:hover {
+background: linear-gradient(to right, #dd2476, #ff512f);
+}
