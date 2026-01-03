@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form - TechTonic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-wrapper">
+            <h1>Contact Us</h1>
+            <p class="subtitle">We'd love to hear from you! Fill out the form below.</p>
+
+            <form id="contactForm" novalidate>
+                <!-- Name Field -->
+                <div class="form-group">
+                    <label for="name">Full Name <span class="required">*</span></label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Enter your full name"
+                    >
+                    <span class="error-message" id="nameError"></span>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-group">
+                    <label for="email">Email Address <span class="required">*</span></label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your.email@example.com"
+                    >
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="message">Message <span class="required">*</span></label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="5" 
+                        placeholder="Write your message here..."
+                    ></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+
+            <!-- Success Message (hidden initially) -->
+            <div class="success-message" id="successMessage">
+                <svg class="success-icon" viewBox="0 0 24 24" fill="none">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke="currentColor" stroke-width="2"/>
+                </svg>
+                <h3>Message Sent Successfully!</h3>
+                <p>Thank you for contacting us. We'll get back to you soon.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
