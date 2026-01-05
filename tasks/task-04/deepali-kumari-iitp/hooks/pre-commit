@@ -1,0 +1,15 @@
+#!/bin/bash
+
+FILES=$(git diff --cached --name-only)
+
+for file in $FILES; do
+  if [[ $file == *.js || $file == *.py ]]; then
+    CONTENT=$(git show :$file)
+    if echo "$CONTENT" | grep -E "console\.log\(|print\(" > /dev/null; then
+      echo " Commit blocked: Remove console.log or print statements before committing."
+      exit 1
+    fi
+  fi
+done
+
+exit 0
