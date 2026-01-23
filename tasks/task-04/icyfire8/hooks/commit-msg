@@ -1,0 +1,15 @@
+#!/bin/sh
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+PATTERN="^(feat|fix|docs|chore|refactor|test): .+"
+
+if ! echo "$COMMIT_MSG" | grep -qE "$PATTERN"; then
+  echo "❌ Invalid commit message format."
+  echo "Use: <type>: <short description>"
+  echo "Allowed types: feat, fix, docs, chore, refactor, test"
+  exit 1
+fi
+
+exit 0

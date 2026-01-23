@@ -1,0 +1,24 @@
+#!/bin/sh
+
+FILES=$(git diff --cached --name-only)
+
+for file in $FILES; do
+  # Skip deleted files
+  if [ ! -f "$file" ]; then
+    continue
+  fi
+
+  # Skip git hooks and internal scripts
+  case "$file" in
+    .git/*|tasks/task-04/icyfire8/hooks/*)
+      continue
+      ;;
+  esac
+
+  if grep -nE "console\.log|print\(" "$file" > /dev/null; then
+    echo "Commit blocked: Remove console.log or print statements before committing."
+    exit 1
+  fi
+done
+
+exit 0
