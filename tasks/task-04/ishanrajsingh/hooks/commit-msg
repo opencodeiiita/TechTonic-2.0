@@ -1,0 +1,15 @@
+#!/bin/bash
+
+COMMIT_MSG_FILE=$1
+COMMIT_MSG=$(cat "$COMMIT_MSG_FILE")
+
+PATTERN="^(feat|fix|docs|chore|refactor|test): .+"
+
+if [[ ! "$COMMIT_MSG" =~ $PATTERN ]]; then
+  echo "Invalid commit message format."
+  echo "Use: <type>: <short description>"
+  echo "Example: feat: add resume analysis service"
+  exit 1
+fi
+
+exit 0
