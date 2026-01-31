@@ -1,0 +1,17 @@
+#!/bin/bash
+
+echo "🔍 Running pre-commit checks..."
+
+FILES=$(git diff --cached --name-only --diff-filter=ACM)
+
+for FILE in $FILES; do
+  if [[ "$FILE" =~ \.(js|ts|py)$ ]]; then
+    if git diff --cached "$FILE" | grep -E "console\.log\(|print\(" > /dev/null; then
+      echo "Commit blocked: Remove console.log or print statements before committing."
+      exit 1
+    fi
+  fi
+done
+
+echo "Pre-commit checks passed."
+exit 0
