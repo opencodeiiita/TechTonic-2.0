@@ -1,0 +1,5 @@
+total 0
+drwxr-xr-x 1 ACER 197121 0 Jan 26 14:25 ./
+drwxr-xr-x 1 ACER 197121 0 Jan 26 14:23 ../
+-rw-r--r-- 1 ACER 197121 0 Jan 26 14:25 .secret.txt
+-r--r--r-- 1 ACER 197121 0 Jan 26 14:25 visible.txt
